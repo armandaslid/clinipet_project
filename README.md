@@ -1,8 +1,9 @@
 # CliniPet Project @ Masterschool
 
 ## **Tasks**:
-- *Task 1.1*: Clean data in registration form and create `registration_clean`.  
- Write a query that will fix the problems in the columns in healthtail_reg_cards, in particular: 
+- *Task 1.1*:
+  Clean data in registration form and create `registration_clean`.  
+  Write a query that will fix the problems in the columns in healthtail_reg_cards, in particular: 
  - will apply standardisation ( or just upper case)  on column patient_name
  - will remove non-numeric data from column owner_phone
  - will replace missing values in column breed with “Unknown”  
