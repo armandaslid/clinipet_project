@@ -25,7 +25,7 @@
   - How does spending on medications change over time?
   - Is there an increase in diagnoses of certain types over time?
 ### **Data:**
-Data provided by the client HealthTail: [healthtail_reg_cards.csv](https://github.com/armandaslid/clinipet_project/blob/main/project_files/healthtail_reg_cards.csv), [invoices.csv](https://github.com/armandaslid/clinipet_project/blob/main/project_files/invoices.csv), [visits.csv](https://github.com/armandaslid/clinipet_project/blob/main/project_files/visits.csv).
+Provided by the client HealthTail: [healthtail_reg_cards.csv](https://github.com/armandaslid/clinipet_project/blob/main/project_files/healthtail_reg_cards.csv), [invoices.csv](https://github.com/armandaslid/clinipet_project/blob/main/project_files/invoices.csv), [visits.csv](https://github.com/armandaslid/clinipet_project/blob/main/project_files/visits.csv).
 
 
 ## *Results*:
