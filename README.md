@@ -15,6 +15,15 @@
 2. What med had the highest monthly total_value spent on patients? At what month?
 3. What month was the highest in packs of meds spent in vet clinic?
 4. What’s an average monthly spent in packs of the med that generated the most revenue?
+### **Task 3: Creating interactive report in Looker Studio**
+  Key concerns that HealthTail managers would like addressed in the dashboard:
+  - What are the most common diagnoses and diseases overall? How do they break down by pet type?
+  - Which diseases are most prevalent among specific breeds?
+  - Which diseases incur the highest spending, and how frequently do they appear in the data?
+  - Are certain pet types (e.g., dogs, cats) more susceptible to specific diseases or associated with higher treatment costs?
+  - How does age influence the prevalence of certain diseases?
+  - How does spending on medications change over time?
+  - Is there an increase in diagnoses of certain types over time?
 
 Data provided by the client HealthTail: [healthtail_reg_cards.csv](https://github.com/armandaslid/clinipet_project/blob/main/project_files/healthtail_reg_cards.csv), [invoices.csv](https://github.com/armandaslid/clinipet_project/blob/main/project_files/invoices.csv), [visits.csv](https://github.com/armandaslid/clinipet_project/blob/main/project_files/visits.csv).
 
