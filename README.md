@@ -1,16 +1,16 @@
 # CliniPet Project @ Masterschool
 
 ## **Tasks**:
-###**Task 1.1: Clean data in registration form and create `registration_clean` table**  
+### **Task 1.1: Clean data in registration form and create `registration_clean` table**  
   Write a query that will fix the problems in the columns in `healthtail_reg_cards`, in particular: 
   - Apply standardisation on column patient_name;
   - Remove non-numeric data from column owner_phone;
   - Replace missing values in column breed with “Unknown”.
-###**Task 1.2: Creat `med_audit` table**  
+### **Task 1.2: Creat `med_audit` table**  
   The new table, `med_audit`, should track the movement of medications in stock—indicating "in" when medications are purchased and "out" when 
   they are used in procedures. It should contain the following columns:
   month, med_name, total_packs, total_value, stock_movement.
-###**Task 2: Answering Research Questions**  
+### **Task 2: Answering Research Questions**  
 What med did we spend the most money on in total?
 What med had the highest monthly total_value spent on patients? At what month?
 What month was the highest in packs of meds spent in vet clinic?
