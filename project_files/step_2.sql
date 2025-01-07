@@ -47,8 +47,7 @@ What’s an average monthly spent in packs of the med that generated the most re
 */
 -- Q4 solution:
 
-SELECT 
-       ROUND(AVG(total_packs), 2) AS avg_packs_spent
+SELECT ROUND(AVG(total_packs), 2) AS avg_packs_spent
 FROM `clinipet-project.clinipet_dataset.med_audit`
 WHERE stock_movement = "stock out"
 AND med_name = (SELECT med_name
