@@ -21,5 +21,5 @@ Data provided by the client HealthTail: [healthtail_reg_cards.csv](https://githu
 
 ## *Results*:
 - [SQL Code: Data Cleaning and Aggregation](https://github.com/armandaslid/clinipet_project/blob/main/project_files/step_1.sql)
-- [SQL Code: Answering Research Questions](404)
+- [SQL Code: Answering Research Questions](https://github.com/armandaslid/clinipet_project/blob/main/project_files/step_2.sql)
 - [Looker Studio Report](404)
