@@ -8,4 +8,6 @@ None
 
 
 ## *Results*:
-- [SQL Code:](404)
+- [SQL Code: Data Cleaning and Aggregation](404)
+- [SQL Code: Answering Research Questions](404)
+- [Looker Studio Report](404)
