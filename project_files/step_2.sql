@@ -22,7 +22,7 @@ SELECT med_name
        ,month
        ,SUM(total_value) AS total_spent
 FROM `clinipet-project.clinipet_dataset.med_audit`
-WHERE stock_movement = "stock in"
+WHERE stock_movement = "stock out"
 GROUP BY 1, 2
 ORDER BY 3 DESC
 ;
@@ -52,7 +52,7 @@ FROM `clinipet-project.clinipet_dataset.med_audit`
 WHERE stock_movement = "stock out"
 AND med_name = (SELECT med_name
                 FROM `clinipet-project.clinipet_dataset.med_audit`
-                WHERE stock_movement = "stock in"
+                WHERE stock_movement = "stock out"
                 GROUP BY 1
                 ORDER BY SUM(total_value) DESC
                 LIMIT 1)
