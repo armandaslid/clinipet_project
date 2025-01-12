@@ -49,7 +49,7 @@ What’s an average monthly spent in packs of the med that generated the most re
 
 SELECT ROUND(AVG(total_packs), 2) AS avg_packs_spent                     -- Calculating a single value of average packs spent
 FROM `clinipet-project.clinipet_dataset.med_audit`
-WHERE stock_movement = "stock out"
+WHERE stock_movement = "stock out"                                       -- Filtering only spent packs on patients
 AND med_name = (SELECT med_name                                          -- Subquery to find and filter by the medicament that generated the most revenue
                 FROM `clinipet-project.clinipet_dataset.med_audit`
                 WHERE stock_movement = "stock out"
