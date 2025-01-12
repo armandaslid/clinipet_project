@@ -5,9 +5,9 @@ What med did we spend the most money on in total?
 -- Q1 solution:
 
 SELECT med_name
-       ,SUM(total_value) AS total_spent
+       ,SUM(total_value) AS total_spent                     -- Calculating total amount spent by medicament
 FROM `clinipet-project.clinipet_dataset.med_audit`
-WHERE stock_movement = "stock in"
+WHERE stock_movement = "stock in"                           -- Filtering only recieved medicaments
 GROUP BY 1
 ORDER BY 2 DESC
 ;
@@ -20,9 +20,9 @@ What med had the highest monthly total_value spent on patients? At what month?
 
 SELECT med_name
        ,month
-       ,SUM(total_value) AS total_spent
+       ,SUM(total_value) AS total_spent                     -- Calculating total amount spent by medicament and month
 FROM `clinipet-project.clinipet_dataset.med_audit`
-WHERE stock_movement = "stock out"
+WHERE stock_movement = "stock out"                          -- Filtering only spent medicaments on patients
 GROUP BY 1, 2
 ORDER BY 3 DESC
 ;
@@ -34,9 +34,9 @@ What month was the highest in packs of meds spent in vet clinic?
 -- Q3 solution:
 
 SELECT month
-       ,ROUND(SUM(total_packs), 2) AS packs_spent
+       ,ROUND(SUM(total_packs), 2) AS packs_spent              -- Calculating total packs spent by month
 FROM `clinipet-project.clinipet_dataset.med_audit`
-WHERE stock_movement = "stock out"
+WHERE stock_movement = "stock out"                             -- Filtering only spent packs on patients
 GROUP BY 1
 ORDER BY 2 DESC
 ;
@@ -47,10 +47,10 @@ What’s an average monthly spent in packs of the med that generated the most re
 */
 -- Q4 solution:
 
-SELECT ROUND(AVG(total_packs), 2) AS avg_packs_spent
+SELECT ROUND(AVG(total_packs), 2) AS avg_packs_spent                     -- Calculating a single value of average packs spent
 FROM `clinipet-project.clinipet_dataset.med_audit`
 WHERE stock_movement = "stock out"
-AND med_name = (SELECT med_name
+AND med_name = (SELECT med_name                                          -- Subquery to find and filter by the medicament that generated the most revenue
                 FROM `clinipet-project.clinipet_dataset.med_audit`
                 WHERE stock_movement = "stock out"
                 GROUP BY 1
